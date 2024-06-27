@@ -1,0 +1,81 @@
+// Required
+@import "./bootstrap/scss/functions";
+@import "./bootstrap/scss/variables";
+
+// Create your own color map
+$custom-colors: (
+  "main-theme-l5": #e7ffe7,
+  "main-theme-l4": #adffad,
+  "main-theme-l3": #5cff5c,
+  "main-theme-l2": #0aff0a,
+  "main-theme-l1": #00b800,
+  "main-theme": #006400,
+  "main-theme-d1": #005c00,
+  "main-theme-d2": #005200,
+  "main-theme-d3": #004700,
+  "main-theme-d4": #003d00,
+  "main-theme-d5": #003300,
+  "secondary-theme-l5": #fdfaf1,
+  "secondary-theme-l4": #f8edd2,
+  "secondary-theme-l3": #f1dca4,
+  "secondary-theme-l2": #ebca77,
+  "secondary-theme-l1": #e4b84a,
+  "secondary-theme": #daa520,
+  "secondary-theme-d1": #c4951d,
+  "secondary-theme-d2": #ae841a,
+  "secondary-theme-d3": #987417,
+  "secondary-theme-d4": #826313,
+  "secondary-theme-d5": #6d5310,
+  );
+  
+// Merge "$theme-colors" map and "$custom-colors" map
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+// Required
+@import "./bootstrap/scss/maps";
+@import "./bootstrap/scss/mixins";
+@import "./bootstrap/scss/root";
+  
+  // Optional Bootstrap CSS
+@import "./bootstrap/scss/reboot";
+@import "./bootstrap/scss/type";
+@import "./bootstrap/scss/images";
+@import "./bootstrap/scss/containers";
+@import "./bootstrap/scss/grid";
+@import "./bootstrap/scss/tables";
+@import "./bootstrap/scss/forms";
+@import "./bootstrap/scss/buttons";
+@import "./bootstrap/scss/transitions";
+@import "./bootstrap/scss/dropdown";
+@import "./bootstrap/scss/button-group";
+@import "./bootstrap/scss/nav";
+@import "./bootstrap/scss/navbar";
+@import "./bootstrap/scss/card";
+@import "./bootstrap/scss/accordion";
+@import "./bootstrap/scss/breadcrumb";
+@import "./bootstrap/scss/pagination";
+@import "./bootstrap/scss/badge";
+@import "./bootstrap/scss/alert";
+@import "./bootstrap/scss/progress";
+@import "./bootstrap/scss/list-group";
+@import "./bootstrap/scss/close";
+@import "./bootstrap/scss/toasts";
+@import "./bootstrap/scss/modal";
+@import "./bootstrap/scss/tooltip";
+@import "./bootstrap/scss/popover";
+@import "./bootstrap/scss/carousel";
+@import "./bootstrap/scss/spinners";
+@import "./bootstrap/scss/offcanvas";
+@import "./bootstrap/scss/placeholders";
+
+// Helpers
+@import "./bootstrap/scss/helpers";
+
+// Utilities
+@import "./bootstrap/scss/utilities";
+
+// Utilities API
+@import "./bootstrap/scss/utilities/api";
+
+// custom.scss
+@import "./custom.scss"
